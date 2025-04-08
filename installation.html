@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>德國寶 | 安裝費用</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+  </head>
+
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Roboto", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+      font-size: 62.5%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .pageWrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .headPart {
+      margin-bottom: 2rem;
+    }
+
+    .ListPart {
+      padding-bottom: 20rem;
+    }
+
+    #installation_search {
+      background-color: #f2f2f2;
+      height: auto;
+    }
+
+    #installation_search > div {
+      text-align: center;
+    }
+
+    #installation_search * {
+      letter-spacing: 0.35rem;
+    }
+
+    #installation_search .installationTitle {
+      font-size: 4.5rem;
+      padding: 4.5rem;
+    }
+
+    #installation_search .installationSearchContainer {
+      width: 100%;
+    }
+
+    #installation_search .installationSearchContainer input {
+      padding-left: 40px;
+      width: 80%;
+      height: 50px;
+      border-radius: 25px;
+      border: 3px solid #c4c4c4;
+    }
+
+    .installationSearchContainer input::placeholder {
+      font-size: 1.7rem;
+      color: #d1cfcf;
+    }
+
+    .installationSearchContainer {
+      position: relative;
+    }
+
+    .installationSearchContainer .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+
+    .material-symbols-outlined {
+      position: absolute;
+      top: 27%;
+      left: 11%;
+    }
+
+    .installationTableTitle {
+      color: #00509c;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .categoryTableHeader {
+      width: 100%;
+      background-color: #65bbd0;
+      color: #ffff;
+      font-size: 3.15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+    }
+
+    .categoryIcon {
+      flex: 8% 0 0;
+    }
+
+    .categoryInfo {
+      display: flex;
+      align-items: center;
+    }
+
+    .categoryTableRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .categoryTableRow:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    .categoryTableRow:nth-child(even) {
+      background-color: #e5e5e5;
+    }
+
+    .categoryTableRow:hover {
+      background-color: #d4d2d3;
+      font-weight: 700;
+    }
+
+    .categoryProductIcon {
+      flex: 8% 0 0;
+    }
+
+    #installation_search .categoryProductName {
+      font-size: 1.75rem;
+      letter-spacing: 0rem;
+    }
+
+    #installation_search .categoryProductPrice {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 0rem;
+    }
+
+    .triangle-container {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-top: 30px solid #b0d8e2;
+      transition: transform 0.3s ease;
+
+      position: absolute;
+      left: 5%;
+    }
+
+    .categoryTableContent {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.75s ease;
+    }
+
+    .categoryTableContent.active {
+      max-height: 500px;
+    }
+
+    .triangle-container .triangle.active {
+      transform: rotate(180deg);
+    }
+  </style>
+
+  <body>
+    <section id="installation_search">
+      <div class="pageWrapper">
+        <div class="headPart">
+          <div class="installationTitle">安裝/運輸服務費查</div>
+          <div class="installationSearchContainer">
+            <span class="material-symbols-outlined"> search </span>
+            <input type="text" placeholder="請輸入產品型號" />
+          </div>
+          <div class="installationTableTitle">標準安裝費一覽表</div>
+        </div>
+        <div class="ListPart">
+          <div class="categoryTableContainer">
+            <div class="categoryTable">
+              <div class="categoryTableHeader">
+                <div class="triangle-container">
+                  <div
+                    class="triangle"
+                    data-id="ht"
+                    onclick="toggleContent('ht')"
+                  ></div>
+                </div>
+                <div class="categoryIcon">
+                  <img
+                    src="https://www.germanpool.com/images/installation_lookup/main_category_image01.png"
+                    alt="https://www.germanpool.com/images/installation_lookup/main_category_image01.png"
+                  />
+                </div>
+                <div class="categoryTitle">熱水器</div>
+              </div>
+              <div class="categoryTableContent" data-id="ht">
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+              </div>
+            </div>
+            <div class="categoryTable">
+              <div class="categoryTableHeader">
+                <div class="triangle-container">
+                  <div
+                    class="triangle"
+                    data-id="built"
+                    onclick="toggleContent('built')"
+                  ></div>
+                </div>
+                <div class="categoryIcon">
+                  <img
+                    src="https://www.germanpool.com/images/installation_lookup/main_category_image02.png"
+                    alt="https://www.germanpool.com/images/installation_lookup/main_category_image02.png"
+                  />
+                </div>
+                <div class="categoryTitle">嵌入式電器及爐具</div>
+              </div>
+              <div class="categoryTableContent" data-id="built">
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+              </div>
+            </div>
+            <div class="categoryTable">
+              <div class="categoryTableHeader">
+                <div class="triangle-container">
+                  <div
+                    class="triangle"
+                    data-id="seasonal"
+                    onclick="toggleContent('seasonal')"
+                  ></div>
+                </div>
+                <div class="categoryIcon">
+                  <img
+                    src="https://www.germanpool.com/images/installation_lookup/main_category_image03.png"
+                    alt="https://www.germanpool.com/images/installation_lookup/main_category_image03.png"
+                  />
+                </div>
+                <div class="categoryTitle">季節性</div>
+              </div>
+              <div class="categoryTableContent" data-id="seasonal">
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+              </div>
+            </div>
+            <div class="categoryTable">
+              <div class="categoryTableHeader">
+                <div class="triangle-container">
+                  <div
+                    class="triangle"
+                    data-id="lifestyle"
+                    onclick="toggleContent('lifestyle')"
+                  ></div>
+                </div>
+                <div class="categoryIcon">
+                  <img
+                    src="https://www.germanpool.com/images/installation_lookup/main_category_image04.png"
+                    alt="https://www.germanpool.com/images/installation_lookup/main_category_image04.png"
+                  />
+                </div>
+                <div class="categoryTitle">生活電器</div>
+              </div>
+              <div class="categoryTableContent" data-id="lifestyle">
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+              </div>
+            </div>
+            <div class="categoryTable">
+              <div class="categoryTableHeader">
+                <div class="triangle-container">
+                  <div class="triangle-container">
+                    <div
+                      class="triangle"
+                      data-id="furniture"
+                      onclick="toggleContent('furniture')"
+                    ></div>
+                  </div>
+                </div>
+                <div class="categoryIcon">
+                  <img
+                    src="https://www.germanpool.com/images/installation_lookup/main_category_image05.png"
+                    alt="https://www.germanpool.com/images/installation_lookup/main_category_image05.png"
+                  />
+                </div>
+                <div class="categoryTitle">家具</div>
+              </div>
+              <div class="categoryTableContent" data-id="furniture">
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+                <div class="categoryTableRow">
+                  <div class="categoryInfo">
+                    <div class="categoryProductIcon">
+                      <img
+                        src="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                        alt="https://www.germanpool.com/images/products/product_list/wh_storage/gpu-g2/product_image0.png"
+                      />
+                    </div>
+                    <div class="categoryProductName">
+                      儲水式電熱水器 - 中央系統
+                    </div>
+                  </div>
+                  <div class="categoryProductPrice">HK$ 800 up</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    // 獲取所有的三角形和內容區塊
+    const triangles = document.querySelectorAll(".triangle");
+    const contents = document.querySelectorAll(".categoryTableContent");
+
+    // 默認展開 data-id="ht"
+    document.addEventListener("DOMContentLoaded", () => {
+      const defaultTriangle = document.querySelector('.triangle[data-id="ht"]');
+      const defaultContent = document.querySelector(
+        '.categoryTableContent[data-id="ht"]'
+      );
+
+      if (defaultTriangle && defaultContent) {
+        defaultTriangle.classList.add("active");
+        defaultContent.classList.add("active");
+        defaultContent.style.maxHeight = defaultContent.scrollHeight + "px";
+      }
+    });
+
+    // 切換內容
+    function toggleContent(id) {
+      // 遍歷所有的內容和三角形
+      triangles.forEach((triangle) => {
+        const triangleId = triangle.getAttribute("data-id");
+        const content = document.querySelector(
+          `.categoryTableContent[data-id="${triangleId}"]`
+        );
+
+        if (triangleId === id) {
+          // 展開當前點擊的
+          triangle.classList.toggle("active");
+          content.classList.toggle("active");
+
+          if (content.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = 0;
+          }
+        } else {
+          // 收起其他的
+          triangle.classList.remove("active");
+          content.classList.remove("active");
+          content.style.maxHeight = 0;
+        }
+      });
+    }
+  </script>
+</html>
