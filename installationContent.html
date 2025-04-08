@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>德國寶 | 安裝費用</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+  </head>
+
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Roboto", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+      font-size: 62.5%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .pageWrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .headPart {
+      margin-bottom: 2rem;
+    }
+
+    .ListPart {
+      padding-bottom: 20rem;
+    }
+
+    #installation_search {
+      background-color: #f2f2f2;
+      height: auto;
+    }
+
+    #installation_search > div {
+      text-align: center;
+    }
+
+    #installation_search * {
+      letter-spacing: 0.35rem;
+    }
+
+    #installation_search .installationTitle {
+      font-size: 4.5rem;
+      padding: 4.5rem;
+    }
+
+    #installation_search .installationSearchContainer {
+      width: 100%;
+    }
+
+    #installation_search .installationSearchContainer input {
+      padding-left: 40px;
+      width: 80%;
+      height: 50px;
+      border-radius: 25px;
+      border: 3px solid #c4c4c4;
+    }
+
+    .installationSearchContainer input::placeholder {
+      font-size: 1.7rem;
+      color: #d1cfcf;
+    }
+
+    .installationSearchContainer {
+      position: relative;
+    }
+
+    .installationSearchContainer .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+
+    .material-symbols-outlined {
+      position: absolute;
+      top: 27%;
+      left: 11%;
+    }
+
+    .installationTableTitle {
+      color: #00509c;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    #installation_search .categoryListContainer {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+      width: 100%;
+      margin: 2rem;
+      margin: 4rem auto;
+    }
+
+    #installation_search .categoryListItem {
+      letter-spacing: 0px;
+      background-color: #63bcce;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      min-width: 150px;
+      font-size: 1.7rem;
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .categoryListItem .categoryIcon {
+      flex: 20% 0 0;
+    }
+
+    .contentHeader {
+      position: relative;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contentHeader .productTitle {
+      font-size: 2.6rem;
+    }
+
+    .printButtonContainer {
+      position: absolute;
+      top: 10%;
+      right: 0%;
+    }
+
+    .printButton {
+      font-size: 2.4rem;
+      background-color: #2d6671;
+      color: #ffff;
+      width: 100px;
+      padding: 1rem 0.5rem;
+    }
+
+    /* contentBody Start */
+
+    .detailHeader {
+      background-color: #b2dae2;
+    }
+
+    .detailHeader .title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #2d6671;
+      padding-top: 1rem;
+    }
+
+    #installation_search .detailHeader .detailTitle p {
+      color: #0d8dae;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .triangle-container {
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #0d8dae;
+      transition: transform 0.3s ease;
+    }
+
+    .installationFeeTable {
+      margin-bottom: 10rem;
+    }
+
+    .detailTitle {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .additionalFeeTable {
+      margin-bottom: 5rem;
+    }
+
+    .specialServiceTable {
+      margin-bottom: 5rem;
+    }
+
+    .feeDetailContainer {
+      background-color: #e0e0e0;
+      padding: 2rem 0rem;
+    }
+
+    #installation_search .feeDetailContainer .feeDetailRow {
+      font-size: 1.4rem;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+      letter-spacing: 0px;
+      padding: 0.5rem;
+      color: #484646;
+    }
+
+    .normalRow {
+      font-size: 1.4rem;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      letter-spacing: 0px !important;
+      padding: 0.5rem;
+      color: #484646;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .normalRow .modelInfo {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+    }
+
+    .modelNo {
+      letter-spacing: 0px !important;
+      font-size: 1.6rem;
+    }
+
+    .modelFee {
+      letter-spacing: 0px !important;
+      font-size: 1.6rem;
+      color: #0d8dae;
+      font-weight: 700;
+    }
+
+    .normalRow:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    .normalRow:nth-child(even) {
+      background-color: #e5e5e5;
+    }
+
+    .modelFeeContainer {
+    }
+
+    .normalRow {
+    }
+
+    .detailSubHeader {
+      background-color: #d5e7eb;
+    }
+
+    .detailSubHeader .title {
+      font-size: 2rem;
+      letter-spacing: 0rem;
+      color: #2d6671;
+      padding: 1rem;
+      font-weight: 700;
+    }
+
+    .noteTableTitle {
+      color: #2d6673;
+      font-size: 2.6rem;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .noteItem {
+      display: flex;
+      align-items: center;
+    }
+
+    #installation_search .noteItem .noteContent {
+      display: flex;
+      padding: 0.5rem;
+      letter-spacing: 0px;
+      font-size: 1.4rem;
+    }
+
+    #installation_search .noteItem .noteNo {
+      font-size: 1.4rem;
+    }
+
+    .noteTable {
+      padding: 2rem 13rem;
+      border: 2px solid #387f8f;
+      margin-top: 2rem;
+    }
+
+    .noteContainer {
+      margin-bottom: 2rem;
+    }
+
+    /* contentBody End */
+  </style>
+
+  <body>
+    <section id="installation_search">
+      <div class="pageWrapper">
+        <div class="headPart">
+          <div class="installationTitle">安裝/運輸服務費查</div>
+          <div class="installationSearchContainer">
+            <span class="material-symbols-outlined"> search </span>
+            <input type="text" placeholder="請輸入產品型號" />
+          </div>
+          <div class="installationTableTitle">標準安裝費一覽表</div>
+        </div>
+
+        <div class="ContentPart">
+          <div class="categoryListContainer">
+            <div class="categoryListItem">
+              <div class="categoryTitle">全部</div>
+            </div>
+            <div class="categoryListItem">
+              <div class="categoryIcon">
+                <img
+                  src="https://www.germanpool.com/images/installation_lookup/main_category_image01.png"
+                  alt="https://www.germanpool.com/images/installation_lookup/main_category_image01.png"
+                />
+              </div>
+              <div class="categoryTitle">熱水器</div>
+            </div>
+            <div class="categoryListItem">
+              <div class="categoryIcon">
+                <img
+                  src="https://www.germanpool.com/images/installation_lookup/main_category_image02.png"
+                  alt="https://www.germanpool.com/images/installation_lookup/main_category_image02.png"
+                />
+              </div>
+              <div class="categoryTitle">嵌入式電器及爐具</div>
+            </div>
+            <div class="categoryListItem">
+              <div class="categoryIcon">
+                <img
+                  src="https://www.germanpool.com/images/installation_lookup/main_category_image03.png"
+                  alt="https://www.germanpool.com/images/installation_lookup/main_category_image03.png"
+                />
+              </div>
+              <div class="categoryTitle">季節性</div>
+            </div>
+            <div class="categoryListItem">
+              <div class="categoryIcon">
+                <img
+                  src="https://www.germanpool.com/images/installation_lookup/main_category_image04.png"
+                  alt="https://www.germanpool.com/images/installation_lookup/main_category_image04.png"
+                />
+              </div>
+
+              <div class="categoryTitle">生活電器</div>
+            </div>
+            <div class="categoryListItem">
+              <div class="categoryIcon">
+                <img
+                  src="https://www.germanpool.com/images/installation_lookup/main_category_image05.png"
+                  alt="https://www.germanpool.com/images/installation_lookup/main_category_image05.png"
+                />
+              </div>
+              <div class="categoryTitle">家具</div>
+            </div>
+          </div>
+
+          <div class="installationFeeTable">
+            <div class="contentHeader">
+              <div class="productTitle">儲水式電熱水器 - 中央系統</div>
+              <div class="printButtonContainer">
+                <div class="printButton">打印</div>
+              </div>
+            </div>
+
+            <div class="contentBody">
+              <div class="detailHeader">
+                <div class="title">標準安裝修費</div>
+                <div class="detailTitle">
+                  <div class="triangle-container">
+                    <div class="triangle"></div>
+                  </div>
+                  <p>基本服務安裝詳情</p>
+                </div>
+              </div>
+
+              <div class="feeDetailContainer">
+                <div class="feeDetailRow">電源線 (明線) [10 呎]</div>
+                <div class="feeDetailRow">4分白色包膠冷熱水銅喉 [5 呎]</div>
+                <div class="feeDetailRow">4分銅喉件 [2 個]</div>
+                <div class="feeDetailRow">20A有燈雙線開關掣 [1 個]</div>
+                <div class="feeDetailRow">
+                  (如適用) 4分白色包膠排放閥銅喉 [6 呎]
+                </div>
+                <div class="feeDetailRow">(如適用) 4分水閘掣 [1 個]</div>
+              </div>
+
+              <div class="modelFeeContainer">
+                <div class="normalRow">
+                  <div class="modelInfo">
+                    <div class="modelNo">3.5 至 10 加侖型號（垂直爐）</div>
+                    <div class="modelFee">HK$800</div>
+                  </div>
+                </div>
+                <div class="normalRow">
+                  <div class="modelInfo">
+                    <div class="modelNo">15 至 20 加侖型號（垂直爐）</div>
+                    <div class="modelFee">HK$1000</div>
+                  </div>
+                </div>
+                <div class="normalRow">
+                  <div class="modelInfo">
+                    <div class="modelNo">3.5 至 10 加侖型號（橫直爐）</div>
+                    <div class="modelFee">HK$900</div>
+                  </div>
+                </div>
+                <div class="normalRow">
+                  <div class="modelInfo">
+                    <div class="modelNo">15 至 20 加侖型號（橫直爐）</div>
+                    <div class="modelFee">HK$1100</div>
+                  </div>
+                </div>
+                <div class="normalRow">
+                  <div class="modelInfo">
+                    <div class="modelNo">25 加侖或以上 / 特別款型號</div>
+                    <div class="modelFee">睇位報價</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="additionalFeeTable">
+            <div class="detailHeader">
+              <div class="title">額外收費</div>
+            </div>
+            <div class="detailSubHeader">
+              <div class="title">遍遠地區/樓梯附加費</div>
+            </div>
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">香港、九龍及新界市區</div>
+                <div class="modelFee">HK$800</div>
+              </div>
+            </div>
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">偏遠地區：馬灣</div>
+                <div class="modelFee">$HK200/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  偏遠地區：新界非市區 / 大嶼山其他位置（如愉景灣 / 機場）
+                </div>
+                <div class="modelFee">$HK400/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  偏遠地區：離島（如長洲 / 坪洲 / 南丫島）或禁區
+                </div>
+                <div class="modelFee">$HK600/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">唐樓或升降機無法直達之樓層上落</div>
+                <div class="modelFee">$HK30/層</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialServiceTable">
+            <div class="detailSubHeader">
+              <div class="title">特別服務</div>
+            </div>
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">香港、九龍及新界市區</div>
+                <div class="modelFee">HK$800</div>
+              </div>
+            </div>
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">偏遠地區：馬灣</div>
+                <div class="modelFee">$HK200/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  偏遠地區：新界非市區 / 大嶼山其他位置（如愉景灣 / 機場）
+                </div>
+                <div class="modelFee">$HK400/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  偏遠地區：離島（如長洲 / 坪洲 / 南丫島）或禁區
+                </div>
+                <div class="modelFee">$HK600/次</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">唐樓或升降機無法直達之樓層上落</div>
+                <div class="modelFee">$HK30/層</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialComponentTable">
+            <div class="detailSubHeader">
+              <div class="title">額外零件</div>
+            </div>
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  做電(單相 4000W 以下) : 2.5平方毫米電線 + 膠槽 + 20A曲架掣 +
+                  20A MCB
+                </div>
+                <div class="modelFee">HK$560/850 個</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  做電(單相 4000W 以下) : 2.5平方毫米電線 + 膠槽 + 20A曲架掣 +
+                  20A MCB
+                </div>
+                <div class="modelFee">HK$560/850 個</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  做電(單相 4000W 以下) : 2.5平方毫米電線 + 膠槽 + 20A曲架掣 +
+                  20A MCB
+                </div>
+                <div class="modelFee">HK$560/850 個</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  做電(單相 4000W 以下) : 2.5平方毫米電線 + 膠槽 + 20A曲架掣 +
+                  20A MCB
+                </div>
+                <div class="modelFee">HK$560/850 個</div>
+              </div>
+            </div>
+
+            <div class="normalRow">
+              <div class="modelInfo">
+                <div class="modelNo">
+                  做電(單相 4000W 以下) : 2.5平方毫米電線 + 膠槽 + 20A曲架掣 +
+                  20A MCB
+                </div>
+                <div class="modelFee">HK$560/850 個</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="noteTable">
+            <div class="noteContainer">
+              <div class="noteTableTitle">注意事項</div>
+              <div class="noteItem">
+                <div class="noteNo">A.</div>
+                <div class="noteContent">
+                  安裝報價一概以本聯位單為準，若現場環境有變或與聯位不符，額外工程將由技術員即場報價。
+                </div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">B.</div>
+                <div class="noteContent">
+                  除非購買安裝情況有特別註明，否則所有有標準安裝不包括拆機。
+                </div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">C.</div>
+                <div class="noteContent">所有報價有效期為30天。</div>
+              </div>
+            </div>
+
+            <div class="noteContainer">
+              <div class="noteTableTitle">客人同意事項</div>
+              <div class="noteItem">
+                <div class="noteNo">1.</div>
+                <div class="noteContent">
+                  收貨細節須由客戶簽署確認後才安裝。
+                </div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">2.</div>
+                <div class="noteContent">
+                  安裝前，客戶須先清除所有安裝範圍內之雜物。
+                </div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">3.</div>
+                <div class="noteContent">
+                  客戶須提供合適插位電源及出水位置。
+                </div>
+              </div>
+            </div>
+
+            <div class="noteContainer">
+              <div class="noteTableTitle">備註</div>
+              <div class="noteItem">
+                <div class="noteNo">1.</div>
+                <div class="noteContent">漏電線（明線）[10呎]</div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">2.</div>
+                <div class="noteContent">4分白色包膠冷熱水鋅喉 [5呎]</div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">3.</div>
+                <div class="noteContent">4分鋅喉 [2個]</div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">4.</div>
+                <div class="noteContent">20A有遮蓋掣開關 [1個]</div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">5.</div>
+                <div class="noteContent">
+                  （如適用）4分白色塑膠排水鋅喉 [6呎]
+                </div>
+              </div>
+              <div class="noteItem">
+                <div class="noteNo">6.</div>
+                <div class="noteContent">（如適用）4分水嘴閥 [1個]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const triangles = document.querySelectorAll(".triangle");
+    const contents = document.querySelectorAll(".categoryTableContent");
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const defaultTriangle = document.querySelector('.triangle[data-id="ht"]');
+      const defaultContent = document.querySelector(
+        '.categoryTableContent[data-id="ht"]'
+      );
+
+      if (defaultTriangle && defaultContent) {
+        defaultTriangle.classList.add("active");
+        defaultContent.classList.add("active");
+        defaultContent.style.maxHeight = defaultContent.scrollHeight + "px";
+      }
+    });
+
+    function toggleContent(id) {
+      triangles.forEach((triangle) => {
+        const triangleId = triangle.getAttribute("data-id");
+        const content = document.querySelector(
+          `.categoryTableContent[data-id="${triangleId}"]`
+        );
+
+        if (triangleId === id) {
+          triangle.classList.toggle("active");
+          content.classList.toggle("active");
+
+          if (content.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = 0;
+          }
+        } else {
+          triangle.classList.remove("active");
+          content.classList.remove("active");
+          content.style.maxHeight = 0;
+        }
+      });
+    }
+  </script>
+</html>

@@ -109,6 +109,14 @@
       position: relative;
     }
 
+    .categoryTable:nth-of-type(even) .categoryTableHeader {
+      background-color: #77c0d2;
+    }
+
+    .categoryTable:nth-of-type(odd) .categoryTableHeader {
+      background-color: #65bbd0;
+    }
+
     .categoryIcon {
       flex: 8% 0 0;
     }
@@ -122,6 +130,7 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      cursor: pointer;
     }
 
     .categoryTableRow:nth-child(odd) {
@@ -157,6 +166,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
 
     .triangle {
@@ -165,6 +175,7 @@
       border-left: 18px solid transparent;
       border-right: 18px solid transparent;
       border-top: 30px solid #b0d8e2;
+      transform: rotate(-90deg);
       transition: transform 0.3s ease;
 
       position: absolute;
@@ -182,7 +193,7 @@
     }
 
     .triangle-container .triangle.active {
-      transform: rotate(180deg);
+      transform: rotate(0deg);
     }
   </style>
 
