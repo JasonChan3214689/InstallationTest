@@ -118,6 +118,12 @@
       align-items: center;
       justify-content: center;
       gap: 0.8rem;
+
+      cursor: pointer;
+    }
+
+    #installation_search .categoryListItem:hover {
+      background-color: #315c64;
     }
 
     .categoryListItem .categoryIcon {
@@ -148,6 +154,12 @@
       color: #ffff;
       width: 100px;
       padding: 1rem 0.5rem;
+
+      cursor: pointer;
+    }
+
+    .printButton:hover {
+      background-color: #132b30;
     }
 
     /* contentBody Start */
@@ -176,6 +188,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
 
     .triangle {
@@ -185,6 +198,7 @@
       border-right: 6px solid transparent;
       border-top: 8px solid #0d8dae;
       transition: transform 0.3s ease;
+      transform: rotate(-90deg);
     }
 
     .installationFeeTable {
@@ -208,7 +222,6 @@
 
     .feeDetailContainer {
       background-color: #e0e0e0;
-      padding: 2rem 0rem;
     }
 
     #installation_search .feeDetailContainer .feeDetailRow {
@@ -311,6 +324,21 @@
 
     .noteContainer {
       margin-bottom: 2rem;
+    }
+
+    .feeDetailContainer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.75s ease;
+    }
+
+    .feeDetailContainer.active {
+      max-height: 500px;
+      padding: 2rem 0rem;
+    }
+
+    .triangle-container .triangle.active {
+      transform: rotate(0deg);
     }
 
     /* contentBody End */
@@ -669,44 +697,26 @@
   </body>
 
   <script>
-    const triangles = document.querySelectorAll(".triangle");
-    const contents = document.querySelectorAll(".categoryTableContent");
+    // 獲取所有的三角形和內容區塊
+    const triangles = document.querySelectorAll(".triangle-container");
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const defaultTriangle = document.querySelector('.triangle[data-id="ht"]');
-      const defaultContent = document.querySelector(
-        '.categoryTableContent[data-id="ht"]'
-      );
+    // 遍歷每個三角形，添加點擊事件
+    triangles.forEach((triangleContainer) => {
+      const triangle = triangleContainer.querySelector(".triangle");
+      const content = document.querySelector(".feeDetailContainer");
 
-      if (defaultTriangle && defaultContent) {
-        defaultTriangle.classList.add("active");
-        defaultContent.classList.add("active");
-        defaultContent.style.maxHeight = defaultContent.scrollHeight + "px";
-      }
-    });
+      triangleContainer.addEventListener("click", () => {
+        // 切換展開/收起的樣式
+        triangle.classList.toggle("active");
+        content.classList.toggle("active");
 
-    function toggleContent(id) {
-      triangles.forEach((triangle) => {
-        const triangleId = triangle.getAttribute("data-id");
-        const content = document.querySelector(
-          `.categoryTableContent[data-id="${triangleId}"]`
-        );
-
-        if (triangleId === id) {
-          triangle.classList.toggle("active");
-          content.classList.toggle("active");
-
-          if (content.classList.contains("active")) {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } else {
-            content.style.maxHeight = 0;
-          }
+        // 設置展開或收起的高度
+        if (content.classList.contains("active")) {
+          content.style.maxHeight = content.scrollHeight + "px";
         } else {
-          triangle.classList.remove("active");
-          content.classList.remove("active");
           content.style.maxHeight = 0;
         }
       });
-    }
+    });
   </script>
 </html>
